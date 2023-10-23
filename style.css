@@ -61,9 +61,20 @@ center{
     justify-content: space-evenly;
 }
 .v-card{
-    border:solid black;
+    margin:3%;
+    padding:3%;
+    border-radius: 10px;
+    background-color:rgba(0, 0, 0,0.5);
 }
-
+.socials{
+  position: absolute;
+  bottom:70px;
+  right:80px;
+}
+.socials a{
+    background-color: rgba(0, 0, 0,0.5);
+    position: fixed;    
+}
 
 
 
@@ -85,6 +96,9 @@ center{
     }
     .variety{
         flex-direction:column;
+    }
+    .v-card{
+        margin:3% 10%;
     }
 
     
