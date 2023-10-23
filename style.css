@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:wght@300;500&display=swap');
+:root{
+    --dark:#c7003f;
+    --mid-dark:#DB4141;
+    --med:#f96a00;
+    --light:#faab00;
+    --verylight:#daf204;
+    --normal:'Poppins', sans-serif;
+    --cursive:'DM Serif Display', serif;
+}
+body{
+  background-color: var(--mid-dark);
+  font-family: var(--normal);
+  margin:0%;
+  border-radius: 2%;
+  color:var(--light);
+  text-align: center;
+}
+nav{
+    display: flex;
+    justify-content:space-evenly;
+    background-color:rgba(0,0,0,0.7);
+    z-index: 100;
+    position:fixed;
+    top:0;
+    width:100%;
+}
+a{
+    text-decoration: none;
+    color:var(--light);
+    padding:1.5%;
+}
+a:hover{
+    border-bottom: solid var(--light) 5px;
+}
+.hero{
+    background-image:url("media/hero.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    height:100vh;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--cursive);
+    color:var(--verylight);
+}
+.hero hgroup{
+    position:absolute;
+    right:5%;
+    top:20%;
+    font-size: calc(30px + 0.390625vw);
+}
+center{
+    font-size:calc(20px + 0.390625vw) ;
+}
+.about{
+    padding:3%;
+}
+.variety{
+    display: flex;
+    justify-content: space-evenly;
+}
+.v-card{
+    border:solid black;
+}
+
+
+
+
+@media (max-width:1090px) {
+    .hero hgroup{
+        top:10%;
+        margin-left:10%;      
+    }
+    .hero hgroup img{
+        background-color:rgba(255,255,255,0.5);
+        border-radius: 50%;        
+    }
+    .hero{
+        background-image: linear-gradient(rgba(0, 0, 0,0.5),rgba(2, 48, 32,0.7)),url("media/hero.jpg");
+        height:60vh;
+    }
+    .variety{
+        flex-direction:column;
+    }
+
+    
+}
